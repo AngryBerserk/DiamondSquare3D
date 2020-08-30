@@ -1,0 +1,287 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 852
+  ClientWidth = 1213
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Align = Left
+    Size.Width = 169.000000000000000000
+    Size.Height = 852.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Button1: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 216.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Generate'
+      OnClick = Button1Click
+      object ESeed: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 0
+        Text = '0'
+        Position.X = -8.000000000000000000
+        Position.Y = -192.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        object Label1: TLabel
+          Position.Y = -19.000000000000000000
+          Text = 'Seed'
+        end
+      end
+      object ERoughness: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 1
+        Text = '0.2'
+        Position.X = -8.000000000000000000
+        Position.Y = -149.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        object Label2: TLabel
+          Position.Y = -19.000000000000000000
+          Text = 'Roughness'
+        end
+      end
+      object E1P: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 2
+        Text = '0'
+        Position.X = -8.000000000000000000
+        Position.Y = -109.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object E2P: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 3
+        Text = '0'
+        Position.X = 72.000000000000000000
+        Position.Y = -109.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object E4P: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 4
+        Text = '0'
+        Position.X = 72.000000000000000000
+        Position.Y = -72.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object E3P: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 5
+        Text = '0'
+        Position.X = -8.000000000000000000
+        Position.Y = -72.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object EEdge: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 6
+        Text = '0'
+        Position.X = -8.000000000000000000
+        Position.Y = -32.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        object Label3: TLabel
+          Position.Y = -19.000000000000000000
+          Text = 'Edge'
+        end
+      end
+    end
+    object SWater: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Cursor = crIBeam
+      Max = 255.000000000000000000
+      Value = 40.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 816.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      OnChange = SWaterChange
+      object TWater: TTrackBar
+        Frequency = 5.000000000000000000
+        Max = 255.000000000000000000
+        Orientation = Vertical
+        Position.X = 24.000000000000000000
+        Position.Y = -304.000000000000000000
+        RotationAngle = 180.000000000000000000
+        Size.Width = 20.000000000000000000
+        Size.Height = 297.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Value = 40.000000000000000000
+        OnChange = TWaterChange
+      end
+    end
+    object ChSqr: TCheckBox
+      IsChecked = True
+      Position.X = 8.000000000000000000
+      Position.Y = 280.000000000000000000
+      Size.Width = 137.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Sqr'
+      OnChange = ChSqrChange
+    end
+    object SSnow: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 4
+      Cursor = crIBeam
+      Max = 255.000000000000000000
+      Value = 200.000000000000000000
+      Position.X = 88.000000000000000000
+      Position.Y = 816.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      OnChange = SSnowChange
+      object TSnow: TTrackBar
+        Frequency = 5.000000000000000000
+        Max = 255.000000000000000000
+        Orientation = Vertical
+        Position.X = 21.000000000000000000
+        Position.Y = -304.000000000000000000
+        RotationAngle = 180.000000000000000000
+        Size.Width = 20.000000000000000000
+        Size.Height = 297.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Value = 200.000000000000000000
+        OnChange = TSnowChange
+      end
+    end
+    object ChNormalize: TCheckBox
+      IsChecked = True
+      Position.X = 8.000000000000000000
+      Position.Y = 296.000000000000000000
+      Size.Width = 137.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Normalize'
+      OnChange = ChSqrChange
+    end
+  end
+  object Panel2: TPanel
+    Align = Client
+    Size.Width = 1044.000000000000000000
+    Size.Height = 852.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    OnPaint = Panel2Paint
+    object View: TViewport3D
+      Align = Client
+      Camera = Camera1
+      Color = claBlack
+      Size.Width = 1044.000000000000000000
+      Size.Height = 852.000000000000000000
+      Size.PlatformDefault = False
+      UsingDesignCamera = False
+      object Mesh1: TMesh
+        Width = 1.000000000000000000
+        Height = 1.000000000000000000
+        Depth = 1.000000000000000000
+        OnMouseWheel = Mesh1MouseWheel
+        MaterialSource = LightMaterialSource1
+        object FloatAnimation1: TFloatAnimation
+          Enabled = True
+          Duration = 10.000000000000000000
+          Loop = True
+          PropertyName = 'RotationAngle.Y'
+          StartValue = 0.000000000000000000
+          StopValue = 360.000000000000000000
+        end
+        object Cube1: TCube
+          Position.Y = 0.500000000000000000
+          Scale.Y = 0.009999999776482582
+          Width = 1.000000000000000000
+          Height = 1.000000000000000000
+          Depth = 1.000000000000000000
+          Opacity = 0.899999976158142100
+          SubdivisionsDepth = 10
+          SubdivisionsHeight = 10
+          SubdivisionsWidth = 10
+          MaterialSource = LightMaterialSource2
+        end
+      end
+      object Dummy2: TDummy
+        RotationAngle.X = 300.000000000000000000
+        Width = 1.000000000000000000
+        Height = 1.000000000000000000
+        Depth = 1.000000000000000000
+        Quanternion = '(0.5,0,0,-0.866025388240814)'
+        object Camera1: TCamera
+          AngleOfView = 45.000000000000000000
+          Target = Mesh1
+          Position.Z = -3.000000000000000000
+          RotationAngle.Y = 359.713531494140600000
+          Width = 1.000000000000000000
+          Height = 1.000000000000000000
+          Depth = 1.000000000000000000
+          Quanternion = '(0,0.00250031403265893,0,-0.999996423721313)'
+        end
+        object Light1: TLight
+          Color = claWhite
+          LightType = Point
+          SpotCutOff = 180.000000000000000000
+          SpotExponent = 10.000000000000000000
+          Position.Y = -15.000000000000000000
+          Width = 1.000000000000000000
+          Height = 1.000000000000000000
+          Depth = 1.000000000000000000
+        end
+      end
+      object Dummy1: TDummy
+        RotationAngle.X = 300.000000000000000000
+        RotationAngle.Y = 90.000000000000000000
+        Width = 1.000000000000000000
+        Height = 1.000000000000000000
+        Depth = 1.000000000000000000
+        Quanternion = 
+          '(-0.482962876558304,0.61237245798111,0.129409432411194,0.6123723' +
+          '98376465)'
+      end
+    end
+  end
+  object LightMaterialSource1: TLightMaterialSource
+    Diffuse = claWhite
+    Ambient = xFF202020
+    Emissive = claNull
+    Specular = xFF606060
+    Shininess = 30
+    Left = 592
+    Top = 416
+  end
+  object LightMaterialSource2: TLightMaterialSource
+    Diffuse = claWhite
+    Ambient = claMediumblue
+    Emissive = claNull
+    Specular = claMediumblue
+    Shininess = 30
+    Left = 337
+    Top = 192
+  end
+end

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.687,F:\Proj\Delphi\New_DiamondSquare\Unit2.fmx=F:\Proj\Delphi\Unit2.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.452,F:\Proj\Delphi\New_DiamondSquare\DiamondSquare.dproj=F:\Proj\Delphi\Project3.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.687,F:\Proj\Delphi\New_DiamondSquare\Unit2.pas=F:\Proj\Delphi\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.253,=F:\Proj\Delphi\Unit2.pas</Transaction>
+  </Transactions>
+</BorlandProject>
